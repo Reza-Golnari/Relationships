@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 * { margin: 0; padding: 0; font-family: "Roboto", sans-serif; }
 
-body { min-height: 100vh; max-width: 100%; background-color: #eae7e4; margin: auto; font-size: 16px; }
+body { min-height: 100vh; max-width: 1300px; background-color: #eae7e4; margin: auto; font-size: 16px; }
 
 .navbar-hamburger-button { display: none; position: relative; }
 
@@ -17,7 +17,9 @@ body { min-height: 100vh; max-width: 100%; background-color: #eae7e4; margin: au
 
 .navbar-hamburger-button .hamburger-button .hamburger-icon span:nth-child(3) { bottom: 25%; }
 
-.navbar-hamburger-button .hamburger-button-menu { position: fixed; width: 50vw; height: 100vh; background-color: #8f8b87; z-index: 100; transition: all 0.5s; left: -50%; }
+.navbar-hamburger-button .hamburger-button-menu { position: fixed; width: 50vw; height: 100vh; background-color: #eae7e4; z-index: 100; transition: all 0.5s; left: -50%; }
+
+@media (max-width: 450px) { .navbar-hamburger-button .hamburger-button-menu { width: 70vw; left: -70%; } }
 
 .navbar-hamburger-button .hamburger-button-menu .hamburger-button-navbar { list-style: none; width: 80%; margin: 0 auto; padding: 10px 20px; text-align: center; }
 
@@ -31,9 +33,11 @@ body { min-height: 100vh; max-width: 100%; background-color: #eae7e4; margin: au
 
 .navbar-hamburger-button .hamburger-button-menu .hamburger-btn-group { width: 80%; margin: 0 auto; display: flex; flex-direction: column; }
 
-.navbar-hamburger-button .hamburger-button-menu .hamburger-btn-group button { padding: 15px 20px; margin: 5px 0; border: 1px solid rgba(0, 0, 0, 0.781); border-radius: 10px; background-color: #686562; color: black; }
+.navbar-hamburger-button .hamburger-button-menu .hamburger-btn-group button { padding: 15px 20px; margin: 5px 0; border: 1px solid rgba(0, 0, 0, 0.781); border-radius: 10px; background-color: #aaa59f; color: black; }
 
 @media (max-width: 450px) { .navbar-hamburger-button .hamburger-button-menu .hamburger-btn-group button { font-size: 0.8em; } }
+
+@media (min-width: 1000px) { .navbar-hamburger-button .hamburger-button-menu .hamburger-btn-group button { font-size: 2em; } }
 
 .navbar-hamburger-button .hamburger-button-menu .img-menu { width: 80%; margin: 50px auto; }
 
@@ -80,4 +84,68 @@ body { min-height: 100vh; max-width: 100%; background-color: #eae7e4; margin: au
 .header .nav .btn-group .btn-item-2 { background-color: #000; color: #fff; }
 
 .header .nav .btn-group .btn-item-2:hover { background-color: #eae7e4; color: #000; }
+
+.conteiner { display: grid; grid-template-columns: 1fr 1fr; padding: 20px 30px; }
+
+@media (max-width: 770px) { .conteiner { padding: 50px 30px; } }
+
+@media (max-width: 640px) { .conteiner { grid-template-columns: 1fr; } }
+
+.conteiner main { padding: 20px; display: flex; flex-direction: column; align-items: center; }
+
+.conteiner main h1 { font-size: 4em; color: rgba(0, 0, 0, 0.699); margin-bottom: 20px; }
+
+@media (max-width: 880px) { .conteiner main h1 { font-size: 3em; } }
+
+@media (max-width: 770px) { .conteiner main h1 { font-size: 2em; } }
+
+@media (max-width: 640px) { .conteiner main h1 { text-align: center; font-size: 4em; } }
+
+@media (max-width: 450px) { .conteiner main h1 { font-size: 2.5em; } }
+
+.conteiner main p:nth-child(2) { color: rgba(0, 0, 0, 0.76); font-weight: 300; margin-bottom: 20px; }
+
+@media (min-width: 1000px) { .conteiner main p:nth-child(2) { font-size: 2em; } }
+
+@media (max-width: 770px) { .conteiner main p:nth-child(2) { font-size: 0.8em; } }
+
+@media (max-width: 640px) { .conteiner main p:nth-child(2) { text-align: center; font-size: 2em; } }
+
+@media (max-width: 450px) { .conteiner main p:nth-child(2) { font-size: 1.5em; } }
+
+.conteiner main .main-btn { display: flex; align-items: center; justify-content: space-around; margin: 20px 0; width: 100%; }
+
+@media (max-width: 770px) { .conteiner main .main-btn { flex-direction: column; } }
+
+.conteiner main .main-btn button { display: block; padding: 10px 30px; border: 1px solid black; border-radius: 2px; background-color: rgba(0, 0, 0, 0.815); color: #fff; transition: all 200ms; font-size: 1em; }
+
+.conteiner main .main-btn button:hover { background-color: #eae7e4; color: black; }
+
+@media (max-width: 770px) { .conteiner main .main-btn button { margin-bottom: 10px; width: 100%; } }
+
+@media (max-width: 640px) { .conteiner main .main-btn button { font-size: 1.2em; } }
+
+@media (max-width: 450px) { .conteiner main .main-btn button { font-size: 1em; } }
+
+.conteiner main .main-btn button:nth-child(2) { background-color: #eae7e4; color: #000; }
+
+.conteiner main .main-btn button:nth-child(2):hover { background-color: rgba(0, 0, 0, 0.815); color: #fff; }
+
+.conteiner main .iconbar { color: rgba(0, 0, 0, 0.884); margin-top: auto; display: flex; align-items: center; justify-content: center; width: 100%; }
+
+.conteiner main .iconbar p { margin-right: 20px; font-size: 1.5em; }
+
+@media (max-width: 770px) { .conteiner main .iconbar p { font-size: 1em; } }
+
+@media (max-width: 640px) { .conteiner main .iconbar p { justify-content: center; } }
+
+.conteiner main .iconbar .icons { font-size: 2em; }
+
+.conteiner main .iconbar .icons a { text-decoration: none; color: #000; }
+
+.conteiner aside { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+
+.conteiner aside img { display: block; width: 100%; }
+
+@media (max-width: 640px) { .conteiner aside { display: none; } }
 /*# sourceMappingURL=Style.css.map */
