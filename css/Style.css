@@ -3,6 +3,28 @@
 
 body { min-height: 100vh; max-width: 100%; background-color: #eae7e4; margin: auto; font-size: 16px; }
 
+.navbar-hamburger-button { display: none; position: relative; }
+
+@media (max-width: 640px) { .navbar-hamburger-button { display: block; } }
+
+.navbar-hamburger-button .hamburger-button { position: absolute; top: 10px; right: 2%; width: 40px; height: 40px; border: 1px solid transparent; border-radius: 5px; }
+
+.navbar-hamburger-button .hamburger-button .hamburger-icon { overflow: hidden; position: absolute; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; }
+
+.navbar-hamburger-button .hamburger-button .hamburger-icon span { position: absolute; width: 80%; height: 2px; background-color: #686562; transition: all 0.5s; transform-origin: left; }
+
+.navbar-hamburger-button .hamburger-button .hamburger-icon span:nth-child(1) { top: 25%; }
+
+.navbar-hamburger-button .hamburger-button .hamburger-icon span:nth-child(3) { bottom: 25%; }
+
+.navbar-hamburger-button .hamburger-button-menu { position: fixed; left: 0%; width: 50vw; height: 100vh; background-color: #8f8b87; z-index: 100; }
+
+.navbar-hamburger-button .checkbox:checked ~ .hamburger-button span:nth-child(1) { top: 75%; left: 20%; transform: rotate(-45deg); }
+
+.navbar-hamburger-button .checkbox:checked ~ .hamburger-button span:nth-child(2) { transform: translateX(120%); }
+
+.navbar-hamburger-button .checkbox:checked ~ .hamburger-button span:nth-child(3) { bottom: 75%; left: 20%; transform: rotate(45deg); }
+
 .header { max-width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 10px; }
 
 .header .brand img { width: 100%; }
