@@ -17,13 +17,31 @@ body { min-height: 100vh; max-width: 100%; background-color: #eae7e4; margin: au
 
 .navbar-hamburger-button .hamburger-button .hamburger-icon span:nth-child(3) { bottom: 25%; }
 
-.navbar-hamburger-button .hamburger-button-menu { position: fixed; left: 0%; width: 50vw; height: 100vh; background-color: #8f8b87; z-index: 100; }
+.navbar-hamburger-button .hamburger-button-menu { position: fixed; width: 50vw; height: 100vh; background-color: #8f8b87; z-index: 100; transition: all 0.5s; left: -50%; }
+
+.navbar-hamburger-button .hamburger-button-menu .hamburger-button-navbar { list-style: none; width: 80%; margin: 0 auto; padding: 10px 20px; text-align: center; }
+
+.navbar-hamburger-button .hamburger-button-menu .hamburger-button-navbar .hamburger-button-item { margin: 20px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.548); background-color: #6865628c; padding: 10px 0; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.247); border-radius: 10px; transition: all 200ms; }
+
+.navbar-hamburger-button .hamburger-button-menu .hamburger-button-navbar .hamburger-button-item:hover { background-color: #6865624d; }
+
+.navbar-hamburger-button .hamburger-button-menu .hamburger-button-navbar .hamburger-button-item .hamburger-button-link { text-decoration: none; color: rgba(0, 0, 0, 0.671); }
+
+.navbar-hamburger-button .hamburger-button-menu .hamburger-btn-group { width: 80%; margin: 0 auto; display: flex; flex-direction: column; }
+
+.navbar-hamburger-button .hamburger-button-menu .hamburger-btn-group button { padding: 15px 20px; margin: 5px 0; border: 1px solid rgba(0, 0, 0, 0.781); border-radius: 10px; background-color: #686562; color: black; }
+
+.navbar-hamburger-button .hamburger-button-menu .img-menu { width: 80%; margin: 50px auto; }
+
+.navbar-hamburger-button .hamburger-button-menu .img-menu img { width: 100%; border-radius: 5px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.486); }
 
 .navbar-hamburger-button .checkbox:checked ~ .hamburger-button span:nth-child(1) { top: 75%; left: 20%; transform: rotate(-45deg); }
 
 .navbar-hamburger-button .checkbox:checked ~ .hamburger-button span:nth-child(2) { transform: translateX(120%); }
 
 .navbar-hamburger-button .checkbox:checked ~ .hamburger-button span:nth-child(3) { bottom: 75%; left: 20%; transform: rotate(45deg); }
+
+.navbar-hamburger-button .checkbox:checked ~ .hamburger-button-menu { left: 0; }
 
 .header { max-width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 10px; }
 
