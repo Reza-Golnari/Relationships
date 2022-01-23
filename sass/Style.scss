@@ -85,6 +85,9 @@ body {
         .hamburger-button-link {
           text-decoration: none;
           color: rgba(0, 0, 0, 0.671);
+          @media (max-width: 450px) {
+            font-size: 0.8em;
+          }
         }
       }
     }
@@ -100,12 +103,17 @@ body {
         border-radius: 10px;
         background-color: #686562;
         color: rgb(0, 0, 0);
+        @media (max-width: 450px) {
+          font-size: 0.8em;
+        }
       }
     }
     .img-menu {
       width: 80%;
       margin: 50px auto;
-
+      @media (max-width: 450px) {
+        display: none;
+      }
       img {
         width: 100%;
         border-radius: 5px;
@@ -128,6 +136,13 @@ body {
   }
   .checkbox:checked ~ .hamburger-button-menu {
     left: 0;
+  }
+  .menu-pragraph {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    font-size: 0.7em;
+    text-align: center;
   }
 }
 .header {

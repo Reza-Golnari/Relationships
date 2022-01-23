@@ -27,11 +27,17 @@ body { min-height: 100vh; max-width: 100%; background-color: #eae7e4; margin: au
 
 .navbar-hamburger-button .hamburger-button-menu .hamburger-button-navbar .hamburger-button-item .hamburger-button-link { text-decoration: none; color: rgba(0, 0, 0, 0.671); }
 
+@media (max-width: 450px) { .navbar-hamburger-button .hamburger-button-menu .hamburger-button-navbar .hamburger-button-item .hamburger-button-link { font-size: 0.8em; } }
+
 .navbar-hamburger-button .hamburger-button-menu .hamburger-btn-group { width: 80%; margin: 0 auto; display: flex; flex-direction: column; }
 
 .navbar-hamburger-button .hamburger-button-menu .hamburger-btn-group button { padding: 15px 20px; margin: 5px 0; border: 1px solid rgba(0, 0, 0, 0.781); border-radius: 10px; background-color: #686562; color: black; }
 
+@media (max-width: 450px) { .navbar-hamburger-button .hamburger-button-menu .hamburger-btn-group button { font-size: 0.8em; } }
+
 .navbar-hamburger-button .hamburger-button-menu .img-menu { width: 80%; margin: 50px auto; }
+
+@media (max-width: 450px) { .navbar-hamburger-button .hamburger-button-menu .img-menu { display: none; } }
 
 .navbar-hamburger-button .hamburger-button-menu .img-menu img { width: 100%; border-radius: 5px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.486); }
 
@@ -42,6 +48,8 @@ body { min-height: 100vh; max-width: 100%; background-color: #eae7e4; margin: au
 .navbar-hamburger-button .checkbox:checked ~ .hamburger-button span:nth-child(3) { bottom: 75%; left: 20%; transform: rotate(45deg); }
 
 .navbar-hamburger-button .checkbox:checked ~ .hamburger-button-menu { left: 0; }
+
+.navbar-hamburger-button .menu-pragraph { position: absolute; bottom: 0; padding: 20px; font-size: 0.7em; text-align: center; }
 
 .header { max-width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 10px; }
 
